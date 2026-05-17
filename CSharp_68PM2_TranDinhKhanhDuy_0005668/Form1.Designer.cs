@@ -13,93 +13,136 @@
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnDangNhap = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.panelMain.SuspendLayout();
-            this.SuspendLayout();
-
-            this.panelMain.BackColor = System.Drawing.Color.White;
-            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMain.Controls.Add(this.lblTitle);
-            this.panelMain.Controls.Add(this.lblUsername);
-            this.panelMain.Controls.Add(this.lblPassword);
-            this.panelMain.Controls.Add(this.txtUsername);
-            this.panelMain.Controls.Add(this.txtPassword);
-            this.panelMain.Controls.Add(this.btnDangNhap);
-            this.panelMain.Controls.Add(this.btnHuy);
-            this.panelMain.Location = new System.Drawing.Point(50, 40);
-            this.panelMain.Size = new System.Drawing.Size(380, 320);
-
-            this.lblTitle.AutoSize = false;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(30, 100, 200);
-            this.lblTitle.Location = new System.Drawing.Point(0, 20);
-            this.lblTitle.Size = new System.Drawing.Size(380, 40);
-            this.lblTitle.Text = "ĐĂNG NHẬP HỆ THỐNG";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblUsername.Location = new System.Drawing.Point(40, 90);
-            this.lblUsername.Text = "Tên đăng nhập (Email sinh viên):";
-
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtUsername.Location = new System.Drawing.Point(40, 115);
-            this.txtUsername.Size = new System.Drawing.Size(300, 30);
-            this.txtUsername.PlaceholderText = "VD: 12345678@sv.example.edu.vn";
-
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblPassword.Location = new System.Drawing.Point(40, 165);
-            this.lblPassword.Text = "Mật khẩu (MSSV):";
-
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtPassword.Location = new System.Drawing.Point(40, 190);
-            this.txtPassword.Size = new System.Drawing.Size(300, 30);
-            this.txtPassword.PasswordChar = '●';
-            this.txtPassword.PlaceholderText = "Nhập MSSV của bạn";
-
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(30, 100, 200);
-            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangNhap.FlatAppearance.BorderSize = 0;
-            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnDangNhap.Location = new System.Drawing.Point(40, 250);
-            this.btnDangNhap.Size = new System.Drawing.Size(140, 40);
-            this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-
-            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(220, 53, 69);
-            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuy.FlatAppearance.BorderSize = 0;
-            this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnHuy.Location = new System.Drawing.Point(200, 250);
-            this.btnHuy.Size = new System.Drawing.Size(140, 40);
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(240, 244, 255);
-            this.ClientSize = new System.Drawing.Size(480, 400);
-            this.Controls.Add(this.panelMain);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng Nhập - Sinh Viên";
-            this.panelMain.ResumeLayout(false);
-            this.panelMain.PerformLayout();
-            this.ResumeLayout(false);
+            lblTitle = new Label();
+            lblUsername = new Label();
+            lblPassword = new Label();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnDangNhap = new Button();
+            btnHuy = new Button();
+            panelMain = new Panel();
+            panelMain.SuspendLayout();
+            SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            lblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            lblTitle.ForeColor = Color.FromArgb(30, 100, 200);
+            lblTitle.Location = new Point(0, 27);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(434, 53);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "ĐĂNG NHẬP HỆ THỐNG";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Font = new Font("Segoe UI", 10F);
+            lblUsername.Location = new Point(46, 120);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(256, 23);
+            lblUsername.TabIndex = 1;
+            lblUsername.Text = "Tên đăng nhập (Email sinh viên):";
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Font = new Font("Segoe UI", 10F);
+            lblPassword.Location = new Point(46, 220);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(145, 23);
+            lblPassword.TabIndex = 2;
+            lblPassword.Text = "Mật khẩu (MSSV):";
+            // 
+            // txtUsername
+            // 
+            txtUsername.Font = new Font("Segoe UI", 11F);
+            txtUsername.Location = new Point(46, 153);
+            txtUsername.Margin = new Padding(3, 4, 3, 4);
+            txtUsername.Name = "txtUsername";
+            txtUsername.PlaceholderText = "VD: 12345678@sv.example.edu.vn";
+            txtUsername.Size = new Size(342, 32);
+            txtUsername.TabIndex = 3;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Font = new Font("Segoe UI", 11F);
+            txtPassword.Location = new Point(46, 253);
+            txtPassword.Margin = new Padding(3, 4, 3, 4);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '●';
+            txtPassword.PlaceholderText = "Nhập MSSV của bạn";
+            txtPassword.Size = new Size(342, 32);
+            txtPassword.TabIndex = 4;
+            // 
+            // btnDangNhap
+            // 
+            btnDangNhap.BackColor = Color.FromArgb(30, 100, 200);
+            btnDangNhap.Cursor = Cursors.Hand;
+            btnDangNhap.FlatAppearance.BorderSize = 0;
+            btnDangNhap.FlatStyle = FlatStyle.Flat;
+            btnDangNhap.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnDangNhap.ForeColor = Color.White;
+            btnDangNhap.Location = new Point(46, 333);
+            btnDangNhap.Margin = new Padding(3, 4, 3, 4);
+            btnDangNhap.Name = "btnDangNhap";
+            btnDangNhap.Size = new Size(160, 53);
+            btnDangNhap.TabIndex = 5;
+            btnDangNhap.Text = "Đăng nhập";
+            btnDangNhap.UseVisualStyleBackColor = false;
+            btnDangNhap.Click += btnDangNhap_Click;
+            // 
+            // btnHuy
+            // 
+            btnHuy.BackColor = Color.FromArgb(220, 53, 69);
+            btnHuy.Cursor = Cursors.Hand;
+            btnHuy.FlatAppearance.BorderSize = 0;
+            btnHuy.FlatStyle = FlatStyle.Flat;
+            btnHuy.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnHuy.ForeColor = Color.White;
+            btnHuy.Location = new Point(229, 333);
+            btnHuy.Margin = new Padding(3, 4, 3, 4);
+            btnHuy.Name = "btnHuy";
+            btnHuy.Size = new Size(160, 53);
+            btnHuy.TabIndex = 6;
+            btnHuy.Text = "Hủy";
+            btnHuy.UseVisualStyleBackColor = false;
+            btnHuy.Click += btnHuy_Click;
+            // 
+            // panelMain
+            // 
+            panelMain.BackColor = Color.White;
+            panelMain.BorderStyle = BorderStyle.FixedSingle;
+            panelMain.Controls.Add(lblTitle);
+            panelMain.Controls.Add(lblUsername);
+            panelMain.Controls.Add(lblPassword);
+            panelMain.Controls.Add(txtUsername);
+            panelMain.Controls.Add(txtPassword);
+            panelMain.Controls.Add(btnDangNhap);
+            panelMain.Controls.Add(btnHuy);
+            panelMain.Location = new Point(57, 53);
+            panelMain.Margin = new Padding(3, 4, 3, 4);
+            panelMain.Name = "panelMain";
+            panelMain.Size = new Size(434, 426);
+            panelMain.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(240, 244, 255);
+            ClientSize = new Size(817, 533);
+            Controls.Add(panelMain);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Đăng Nhập - Sinh Viên";
+            panelMain.ResumeLayout(false);
+            panelMain.PerformLayout();
+            ResumeLayout(false);
         }
 
         private System.Windows.Forms.Label lblTitle;
