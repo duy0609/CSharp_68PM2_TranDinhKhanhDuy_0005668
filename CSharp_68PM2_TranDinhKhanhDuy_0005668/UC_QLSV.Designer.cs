@@ -1,13 +1,13 @@
 ﻿namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
 {
-    partial class QLSV
+    partial class UC_QLSV
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -39,12 +39,6 @@
             lop = new Label();
             hoten = new Label();
             label1 = new Label();
-            menuStrip1 = new MenuStrip();
-            menuStrip2 = new MenuStrip();
-            menuStrip3 = new MenuStrip();
-            quanrLysSinhVieneToolStripMenuItem = new ToolStripMenuItem();
-            quảnLýLớpHọcToolStripMenuItem1 = new ToolStripMenuItem();
-            đăngXuấtToolStripMenuItem = new ToolStripMenuItem();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -64,12 +58,12 @@
             button8 = new Button();
             button9 = new Button();
             groupBox1.SuspendLayout();
-            menuStrip3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             groupBox1.BackColor = SystemColors.InactiveBorder;
             groupBox1.Controls.Add(comboBox3);
             groupBox1.Controls.Add(comboBox2);
@@ -81,13 +75,12 @@
             groupBox1.Controls.Add(lop);
             groupBox1.Controls.Add(hoten);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(0, 84);
+            groupBox1.Location = new Point(0, 32);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(497, 566);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin sinh viên";
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // comboBox3
             // 
@@ -96,7 +89,6 @@
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(421, 28);
             comboBox3.TabIndex = 11;
-            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
             // 
             // comboBox2
             // 
@@ -105,7 +97,6 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(421, 28);
             comboBox2.TabIndex = 8;
-            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -115,7 +106,6 @@
             label2.Size = new Size(103, 20);
             label2.TabIndex = 10;
             label2.Text = "Lớp môn học :";
-            label2.Click += label2_Click;
             // 
             // dateTimePicker2
             // 
@@ -123,7 +113,6 @@
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(421, 27);
             dateTimePicker2.TabIndex = 8;
-            dateTimePicker2.ValueChanged += dateTimePicker2_ValueChanged;
             // 
             // txt_name
             // 
@@ -131,7 +120,6 @@
             txt_name.Name = "txt_name";
             txt_name.Size = new Size(421, 27);
             txt_name.TabIndex = 5;
-            txt_name.TextChanged += txt_name_TextChanged;
             // 
             // txt_mssv
             // 
@@ -139,7 +127,6 @@
             txt_mssv.Name = "txt_mssv";
             txt_mssv.Size = new Size(421, 27);
             txt_mssv.TabIndex = 4;
-            txt_mssv.TextChanged += txt_mssv_TextChanged;
             // 
             // ngaysinh
             // 
@@ -149,7 +136,6 @@
             ngaysinh.Size = new Size(77, 20);
             ngaysinh.TabIndex = 3;
             ngaysinh.Text = "Ngày sinh:";
-            ngaysinh.Click += ngaysinh_Click;
             // 
             // lop
             // 
@@ -178,78 +164,22 @@
             label1.TabIndex = 0;
             label1.Text = "Mã số sinh viên:";
             // 
-            // menuStrip1
-            // 
-            menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Location = new Point(0, 52);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(5, 2, 0, 2);
-            menuStrip1.Size = new Size(1255, 28);
-            menuStrip1.TabIndex = 4;
-            menuStrip1.Text = "menuStrip1";
-            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
-            // 
-            // menuStrip2
-            // 
-            menuStrip2.ImageScalingSize = new Size(24, 24);
-            menuStrip2.Location = new Point(0, 28);
-            menuStrip2.Name = "menuStrip2";
-            menuStrip2.Padding = new Padding(5, 2, 0, 2);
-            menuStrip2.Size = new Size(1255, 24);
-            menuStrip2.TabIndex = 5;
-            menuStrip2.Text = "menuStrip2";
-            // 
-            // menuStrip3
-            // 
-            menuStrip3.ImageScalingSize = new Size(24, 24);
-            menuStrip3.Items.AddRange(new ToolStripItem[] { quanrLysSinhVieneToolStripMenuItem, quảnLýLớpHọcToolStripMenuItem1, đăngXuấtToolStripMenuItem });
-            menuStrip3.Location = new Point(0, 0);
-            menuStrip3.Name = "menuStrip3";
-            menuStrip3.Padding = new Padding(5, 2, 0, 2);
-            menuStrip3.Size = new Size(1255, 28);
-            menuStrip3.TabIndex = 6;
-            menuStrip3.Text = "menuStrip3";
-            // 
-            // quanrLysSinhVieneToolStripMenuItem
-            // 
-            quanrLysSinhVieneToolStripMenuItem.BackColor = SystemColors.ActiveCaption;
-            quanrLysSinhVieneToolStripMenuItem.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            quanrLysSinhVieneToolStripMenuItem.ForeColor = SystemColors.ActiveCaptionText;
-            quanrLysSinhVieneToolStripMenuItem.Name = "quanrLysSinhVieneToolStripMenuItem";
-            quanrLysSinhVieneToolStripMenuItem.Size = new Size(147, 24);
-            quanrLysSinhVieneToolStripMenuItem.Text = "Quản lý sinh viên";
-            quanrLysSinhVieneToolStripMenuItem.Click += quanrLysSinhVieneToolStripMenuItem_Click;
-            // 
-            // quảnLýLớpHọcToolStripMenuItem1
-            // 
-            quảnLýLớpHọcToolStripMenuItem1.Name = "quảnLýLớpHọcToolStripMenuItem1";
-            quảnLýLớpHọcToolStripMenuItem1.Size = new Size(127, 24);
-            quảnLýLớpHọcToolStripMenuItem1.Text = "Quản lý lớp học";
-            quảnLýLớpHọcToolStripMenuItem1.Click += quảnLýLớpHọcToolStripMenuItem1_Click;
-            // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            đăngXuấtToolStripMenuItem.ForeColor = Color.Red;
-            đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            đăngXuấtToolStripMenuItem.Size = new Size(91, 24);
-            đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
-            đăngXuấtToolStripMenuItem.Click += đăngXuấtToolStripMenuItem_Click;
-            // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button1.BackColor = Color.DeepSkyBlue;
-            button1.Location = new Point(0, 656);
+            button1.Location = new Point(0, 604);
             button1.Name = "button1";
             button1.Size = new Size(244, 63);
             button1.TabIndex = 8;
             button1.Text = "Thêm";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button2.BackColor = Color.MediumSeaGreen;
-            button2.Location = new Point(249, 656);
+            button2.Location = new Point(249, 604);
             button2.Name = "button2";
             button2.Size = new Size(248, 63);
             button2.TabIndex = 9;
@@ -258,19 +188,20 @@
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button3.BackColor = Color.Red;
-            button3.Location = new Point(0, 725);
+            button3.Location = new Point(0, 673);
             button3.Name = "button3";
             button3.Size = new Size(244, 63);
             button3.TabIndex = 10;
             button3.Text = "Xóa";
             button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
             // 
             // button4
             // 
+            button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button4.BackColor = SystemColors.ControlDark;
-            button4.Location = new Point(249, 725);
+            button4.Location = new Point(249, 673);
             button4.Name = "button4";
             button4.Size = new Size(248, 63);
             button4.TabIndex = 11;
@@ -280,10 +211,11 @@
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { MSSV, Column1, Column2, Column3, Column4 });
-            dataGridView1.Location = new Point(535, 188);
+            dataGridView1.Location = new Point(524, 136);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 62;
@@ -329,28 +261,27 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(524, 107);
+            textBox1.Location = new Point(524, 55);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(421, 27);
             textBox1.TabIndex = 13;
-            textBox1.TextChanged += textBox1_TextChanged_1;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(521, 84);
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.Location = new Point(521, 32);
             label3.Name = "label3";
-            label3.Size = new Size(196, 17);
+            label3.Size = new Size(195, 20);
             label3.TabIndex = 15;
             label3.Text = "Tìm kiếm (Tên/MSSV/Lớp)";
             // 
             // button5
             // 
             button5.BackColor = SystemColors.ActiveCaptionText;
-            button5.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(950, 99);
+            button5.Location = new Point(950, 47);
             button5.Name = "button5";
             button5.Size = new Size(104, 43);
             button5.TabIndex = 16;
@@ -359,58 +290,58 @@
             // 
             // button6
             // 
-            button6.Location = new Point(688, 692);
+            button6.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            button6.Location = new Point(688, 640);
             button6.Name = "button6";
             button6.Size = new Size(62, 57);
             button6.TabIndex = 17;
             button6.Text = "<<";
             button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
             // 
             // button7
             // 
-            button7.Location = new Point(746, 692);
+            button7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            button7.Location = new Point(746, 640);
             button7.Name = "button7";
             button7.Size = new Size(62, 57);
             button7.TabIndex = 18;
             button7.Text = "<";
             button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Bottom;
             label4.AutoSize = true;
-            label4.Location = new Point(837, 710);
+            label4.Location = new Point(837, 658);
             label4.Name = "label4";
             label4.Size = new Size(146, 20);
             label4.TabIndex = 19;
-            label4.Text = "Trang 1/1 | 3 bản ghi";
-            label4.Click += label4_Click;
+            label4.Text = "Trang 1/1 | 2 bản ghi";
             // 
             // button8
             // 
-            button8.Location = new Point(1013, 692);
+            button8.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button8.Location = new Point(1013, 640);
             button8.Name = "button8";
             button8.Size = new Size(62, 57);
             button8.TabIndex = 20;
             button8.Text = ">";
             button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
             // 
             // button9
             // 
-            button9.Location = new Point(1071, 692);
+            button9.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button9.Location = new Point(1071, 640);
             button9.Name = "button9";
             button9.Size = new Size(62, 57);
             button9.TabIndex = 21;
             button9.Text = ">>";
             button9.UseVisualStyleBackColor = true;
             // 
-            // QLSV
+            // UC_QLSV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1255, 830);
             Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(label4);
@@ -425,17 +356,10 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(groupBox1);
-            Controls.Add(menuStrip1);
-            Controls.Add(menuStrip2);
-            Controls.Add(menuStrip3);
-            MainMenuStrip = menuStrip1;
-            Name = "QLSV";
-            Text = "QLSV";
-            Load += QLSV_Load;
+            Name = "UC_QLSV";
+            Size = new Size(1255, 760);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            menuStrip3.ResumeLayout(false);
-            menuStrip3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -443,7 +367,11 @@
         }
 
         #endregion
+
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.TextBox txt_mssv;
@@ -451,15 +379,6 @@
         private System.Windows.Forms.Label lop;
         private System.Windows.Forms.Label hoten;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.MenuStrip menuStrip3;
-        private System.Windows.Forms.ToolStripMenuItem quanrLysSinhVieneToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýLớpHọcToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

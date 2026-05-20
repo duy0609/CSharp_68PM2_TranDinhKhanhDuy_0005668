@@ -126,5 +126,15 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
         {
 
         }
+
+        private void quảnLýLớpHọcToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

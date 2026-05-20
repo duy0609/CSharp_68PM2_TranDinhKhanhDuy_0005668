@@ -1,6 +1,6 @@
 ﻿namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
 {
-    partial class Form1
+    partial class Login
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -127,7 +127,7 @@
             panelMain.Size = new Size(434, 426);
             panelMain.TabIndex = 0;
             // 
-            // Form1
+            // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -137,9 +137,10 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng Nhập - Sinh Viên";
+            Load += Login_Load;
             panelMain.ResumeLayout(false);
             panelMain.PerformLayout();
             ResumeLayout(false);

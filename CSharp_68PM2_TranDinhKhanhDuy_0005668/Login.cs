@@ -3,13 +3,13 @@ using System.Windows.Forms;
 
 namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
 
-        private const string EMAIL_SINHVIEN = "duy060905@gmail.com"; 
-        private const string MSSV = "0005668";                       
+        private const string EMAIL_SINHVIEN = "duy060905@gmail.com";
+        private const string MSSV = "0005668";
 
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -67,6 +67,11 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
             {
                 Application.Exit();
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
