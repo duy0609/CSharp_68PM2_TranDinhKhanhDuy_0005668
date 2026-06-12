@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS QLSinhVienCSharp
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE QLSinhVienCSharp;
+
+CREATE TABLE IF NOT EXISTS Classes (
+    ClassId INT AUTO_INCREMENT PRIMARY KEY,
+    ClassName VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS Students (
+    MSSV VARCHAR(20) PRIMARY KEY,
+    FullName VARCHAR(100) NOT NULL,
+    Gender VARCHAR(10) NOT NULL,
+    DateOfBirth DATE NOT NULL,
+    ClassId INT NOT NULL,
+    CONSTRAINT FK_Students_Classes
+        FOREIGN KEY (ClassId) REFERENCES Classes(ClassId)
+);
+
+INSERT IGNORE INTO Classes (ClassName)
+VALUES ('68PM1'), ('68PM2');

@@ -63,7 +63,7 @@
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             groupBox1.Location = new Point(16, 16);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(320, 350);
+            groupBox1.Size = new Size(320, 479);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin lớp học";
@@ -146,7 +146,7 @@
             btnThem.BackColor = Color.FromArgb(52, 152, 219);
             btnThem.FlatStyle = FlatStyle.Flat;
             btnThem.ForeColor = Color.White;
-            btnThem.Location = new Point(16, 380);
+            btnThem.Location = new Point(16, 509);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(150, 45);
             btnThem.TabIndex = 1;
@@ -159,7 +159,7 @@
             btnSua.BackColor = Color.FromArgb(46, 204, 113);
             btnSua.FlatStyle = FlatStyle.Flat;
             btnSua.ForeColor = Color.White;
-            btnSua.Location = new Point(186, 380);
+            btnSua.Location = new Point(186, 509);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(150, 45);
             btnSua.TabIndex = 2;
@@ -172,7 +172,7 @@
             btnXoa.BackColor = Color.FromArgb(231, 76, 60);
             btnXoa.FlatStyle = FlatStyle.Flat;
             btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(16, 440);
+            btnXoa.Location = new Point(16, 569);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(150, 45);
             btnXoa.TabIndex = 3;
@@ -185,7 +185,7 @@
             btnLamMoi.BackColor = Color.FromArgb(149, 165, 166);
             btnLamMoi.FlatStyle = FlatStyle.Flat;
             btnLamMoi.ForeColor = Color.White;
-            btnLamMoi.Location = new Point(186, 440);
+            btnLamMoi.Location = new Point(186, 569);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.Size = new Size(150, 45);
             btnLamMoi.TabIndex = 4;
@@ -198,7 +198,7 @@
             btnXemDSSV.BackColor = Color.FromArgb(41, 128, 185);
             btnXemDSSV.FlatStyle = FlatStyle.Flat;
             btnXemDSSV.ForeColor = Color.White;
-            btnXemDSSV.Location = new Point(16, 500);
+            btnXemDSSV.Location = new Point(16, 629);
             btnXemDSSV.Name = "btnXemDSSV";
             btnXemDSSV.Size = new Size(320, 45);
             btnXemDSSV.TabIndex = 5;
@@ -245,8 +245,9 @@
             dgvLopHoc.Name = "dgvLopHoc";
             dgvLopHoc.RowHeadersVisible = false;
             dgvLopHoc.RowHeadersWidth = 51;
-            dgvLopHoc.Size = new Size(650, 400);
+            dgvLopHoc.Size = new Size(932, 529);
             dgvLopHoc.TabIndex = 9;
+            dgvLopHoc.CellContentClick += dgvLopHoc_CellContentClick;
             // 
             // colMaID
             // 
@@ -279,7 +280,7 @@
             // btnFirst
             // 
             btnFirst.Anchor = AnchorStyles.Bottom;
-            btnFirst.Location = new Point(360, 515);
+            btnFirst.Location = new Point(501, 644);
             btnFirst.Name = "btnFirst";
             btnFirst.Size = new Size(50, 30);
             btnFirst.TabIndex = 10;
@@ -289,7 +290,7 @@
             // btnPrev
             // 
             btnPrev.Anchor = AnchorStyles.Bottom;
-            btnPrev.Location = new Point(420, 515);
+            btnPrev.Location = new Point(561, 644);
             btnPrev.Name = "btnPrev";
             btnPrev.Size = new Size(50, 30);
             btnPrev.TabIndex = 11;
@@ -300,7 +301,7 @@
             // 
             lblPhanTrang.Anchor = AnchorStyles.Bottom;
             lblPhanTrang.AutoSize = true;
-            lblPhanTrang.Location = new Point(600, 520);
+            lblPhanTrang.Location = new Point(741, 649);
             lblPhanTrang.Name = "lblPhanTrang";
             lblPhanTrang.Size = new Size(146, 20);
             lblPhanTrang.TabIndex = 12;
@@ -309,7 +310,7 @@
             // btnNext
             // 
             btnNext.Anchor = AnchorStyles.Bottom;
-            btnNext.Location = new Point(890, 515);
+            btnNext.Location = new Point(1031, 644);
             btnNext.Name = "btnNext";
             btnNext.Size = new Size(50, 30);
             btnNext.TabIndex = 13;
@@ -319,7 +320,7 @@
             // btnLast
             // 
             btnLast.Anchor = AnchorStyles.Bottom;
-            btnLast.Location = new Point(950, 515);
+            btnLast.Location = new Point(1091, 644);
             btnLast.Name = "btnLast";
             btnLast.Size = new Size(50, 30);
             btnLast.TabIndex = 14;
@@ -347,7 +348,7 @@
             Controls.Add(btnThem);
             Controls.Add(groupBox1);
             Name = "UC_QLLH";
-            Size = new Size(1030, 570);
+            Size = new Size(1312, 699);
             Load += UC_QLLH_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

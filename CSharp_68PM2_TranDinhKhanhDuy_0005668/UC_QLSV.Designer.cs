@@ -174,6 +174,7 @@
             button1.TabIndex = 8;
             button1.Text = "Thêm";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -307,6 +308,7 @@
             button7.TabIndex = 18;
             button7.Text = "<";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // label4
             // 
@@ -317,6 +319,7 @@
             label4.Size = new Size(146, 20);
             label4.TabIndex = 19;
             label4.Text = "Trang 1/1 | 2 bản ghi";
+            label4.Click += label4_Click;
             // 
             // button8
             // 

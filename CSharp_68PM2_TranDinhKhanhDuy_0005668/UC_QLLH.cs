@@ -19,5 +19,10 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
         {
 
         }
+
+        private void dgvLopHoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
