@@ -6,7 +6,9 @@ USE QLSinhVienCSharp;
 
 CREATE TABLE IF NOT EXISTS Classes (
     ClassId INT AUTO_INCREMENT PRIMARY KEY,
-    ClassName VARCHAR(50) NOT NULL UNIQUE
+    ClassCode VARCHAR(20) NOT NULL UNIQUE,
+    ClassName VARCHAR(50) NOT NULL,
+    Note VARCHAR(255) NULL
 );
 
 CREATE TABLE IF NOT EXISTS Students (
@@ -19,5 +21,7 @@ CREATE TABLE IF NOT EXISTS Students (
         FOREIGN KEY (ClassId) REFERENCES Classes(ClassId)
 );
 
-INSERT IGNORE INTO Classes (ClassName)
-VALUES ('68PM1'), ('68PM2');
+INSERT IGNORE INTO Classes (ClassCode, ClassName, Note)
+VALUES
+    ('68PM1', '68PM1', ''),
+    ('68PM2', '68PM2', '');

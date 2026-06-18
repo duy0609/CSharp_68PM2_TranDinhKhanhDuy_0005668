@@ -152,6 +152,7 @@
             btnThem.TabIndex = 1;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = false;
+            btnThem.Click += btnThem_Click;
             // 
             // btnSua
             // 
@@ -165,6 +166,7 @@
             btnSua.TabIndex = 2;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
@@ -178,6 +180,7 @@
             btnXoa.TabIndex = 3;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnLamMoi
             // 
@@ -191,6 +194,7 @@
             btnLamMoi.TabIndex = 4;
             btnLamMoi.Text = "Làm mới";
             btnLamMoi.UseVisualStyleBackColor = false;
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
             // btnXemDSSV
             // 
@@ -233,6 +237,7 @@
             btnTim.TabIndex = 8;
             btnTim.Text = "Tìm";
             btnTim.UseVisualStyleBackColor = false;
+            btnTim.Click += btnTim_Click;
             // 
             // dgvLopHoc
             // 
@@ -247,7 +252,7 @@
             dgvLopHoc.RowHeadersWidth = 51;
             dgvLopHoc.Size = new Size(932, 529);
             dgvLopHoc.TabIndex = 9;
-            dgvLopHoc.CellContentClick += dgvLopHoc_CellContentClick;
+            dgvLopHoc.CellClick += dgvLopHoc_CellClick;
             // 
             // colMaID
             // 
@@ -286,6 +291,7 @@
             btnFirst.TabIndex = 10;
             btnFirst.Text = "<<";
             btnFirst.UseVisualStyleBackColor = true;
+            btnFirst.Click += btnFirst_Click;
             // 
             // btnPrev
             // 
@@ -296,6 +302,7 @@
             btnPrev.TabIndex = 11;
             btnPrev.Text = "<";
             btnPrev.UseVisualStyleBackColor = true;
+            btnPrev.Click += btnPrev_Click;
             // 
             // lblPhanTrang
             // 
@@ -316,6 +323,7 @@
             btnNext.TabIndex = 13;
             btnNext.Text = ">";
             btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
             // 
             // btnLast
             // 
@@ -326,6 +334,7 @@
             btnLast.TabIndex = 14;
             btnLast.Text = ">>";
             btnLast.UseVisualStyleBackColor = true;
+            btnLast.Click += btnLast_Click;
             // 
             // UC_QLLH
             // 
