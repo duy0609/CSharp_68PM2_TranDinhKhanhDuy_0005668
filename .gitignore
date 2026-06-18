@@ -1,3 +1,5 @@
 .vs/
 bin/
 obj/
+_codex_build/
+_verification_build/
