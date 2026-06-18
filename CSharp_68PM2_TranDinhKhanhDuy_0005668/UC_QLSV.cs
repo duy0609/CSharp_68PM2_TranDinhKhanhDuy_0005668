@@ -212,5 +212,45 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
                 MessageBox.Show("Không sửa được sinh viên: " + ex.Message);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(selectedMssv))
+            {
+                MessageBox.Show("Vui lòng chọn sinh viên cần xóa.");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show(
+                $"Bạn có chắc muốn xóa sinh viên {selectedMssv}?",
+                "Xác nhận xóa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result != DialogResult.Yes)
+            {
+                return;
+            }
+
+            try
+            {
+                using MySqlConnection connection = DBConnect.GetConnection();
+                connection.Open();
+                using MySqlCommand command = new MySqlCommand(
+                    "DELETE FROM Students WHERE MSSV = @MSSV",
+                    connection);
+                command.Parameters.AddWithValue("@MSSV", selectedMssv);
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Xóa sinh viên thành công.");
+                selectedMssv = null;
+                txt_mssv.ReadOnly = false;
+                LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không xóa được sinh viên: " + ex.Message);
+            }
+        }
     }
 }

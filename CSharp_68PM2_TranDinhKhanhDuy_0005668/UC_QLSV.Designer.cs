@@ -198,6 +198,7 @@
             button3.TabIndex = 10;
             button3.Text = "Xóa";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
