@@ -210,6 +210,7 @@
             button4.TabIndex = 11;
             button4.Text = "Làm mới";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // dataGridView1
             // 
@@ -290,6 +291,7 @@
             button5.TabIndex = 16;
             button5.Text = "Tìm";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -300,6 +302,7 @@
             button6.TabIndex = 17;
             button6.Text = "<<";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -332,6 +335,7 @@
             button8.TabIndex = 20;
             button8.Text = ">";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -342,6 +346,7 @@
             button9.TabIndex = 21;
             button9.Text = ">>";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // UC_QLSV
             // 
