@@ -208,6 +208,7 @@
             btnXemDSSV.TabIndex = 5;
             btnXemDSSV.Text = "Xem danh sách sinh viên";
             btnXemDSSV.UseVisualStyleBackColor = false;
+            btnXemDSSV.Click += btnXemDSSV_Click;
             // 
             // labelTimKiem
             // 

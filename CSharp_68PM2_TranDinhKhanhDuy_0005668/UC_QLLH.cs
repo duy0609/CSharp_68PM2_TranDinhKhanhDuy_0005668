@@ -271,6 +271,59 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
             LoadClasses();
         }
 
+        private void btnXemDSSV_Click(object sender, EventArgs e)
+        {
+            if (selectedClassId == null)
+            {
+                MessageBox.Show("Vui lòng chọn lớp để xem danh sách sinh viên.");
+                return;
+            }
+
+            try
+            {
+                using MySqlConnection connection = DBConnect.GetConnection();
+                using MySqlDataAdapter adapter = new(
+                    @"SELECT MSSV AS 'MSSV',
+                             FullName AS 'Họ và tên',
+                             Gender AS 'Giới tính',
+                             DATE_FORMAT(DateOfBirth, '%Y-%m-%d') AS 'Ngày sinh'
+                      FROM Students
+                      WHERE ClassId = @ClassId
+                      ORDER BY MSSV",
+                    connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@ClassId", selectedClassId);
+
+                DataTable students = new();
+                adapter.Fill(students);
+                ShowStudentList(students);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không tải được danh sách sinh viên: " + ex.Message);
+            }
+        }
+
+        private void ShowStudentList(DataTable students)
+        {
+            using Form form = new()
+            {
+                Text = $"Sinh viên lớp {txtMaLop.Text} - {txtTenLop.Text}",
+                StartPosition = FormStartPosition.CenterParent,
+                Width = 850,
+                Height = 500
+            };
+            DataGridView grid = new()
+            {
+                Dock = DockStyle.Fill,
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                DataSource = students
+            };
+            form.Controls.Add(grid);
+            form.ShowDialog(this);
+        }
+
         private void btnFirst_Click(object sender, EventArgs e)
         {
             currentPage = 1;
