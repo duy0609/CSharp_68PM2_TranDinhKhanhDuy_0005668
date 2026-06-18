@@ -11,6 +11,8 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
 {
     public partial class UC_QLSV : UserControl
     {
+        private string? selectedMssv;
+
         public UC_QLSV()
         {
             InitializeComponent();
@@ -20,9 +22,29 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
             LoadStudents();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0 || e.RowIndex >= dataGridView1.Rows.Count)
+            {
+                return;
+            }
 
+            if (dataGridView1.Rows[e.RowIndex].DataBoundItem is not DataRowView student)
+            {
+                return;
+            }
+
+            selectedMssv = student["MSSV"].ToString();
+            txt_mssv.Text = selectedMssv;
+            txt_mssv.ReadOnly = true;
+            txt_name.Text = student["FullName"].ToString();
+            comboBox2.Text = student["Gender"].ToString();
+            comboBox3.Text = student["ClassName"].ToString();
+
+            if (DateTime.TryParse(student["DateOfBirth"].ToString(), out DateTime dateOfBirth))
+            {
+                dateTimePicker2.Value = dateOfBirth;
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -33,6 +55,8 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
         private void SetupStudentGrid()
         {
             dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
 
             MSSV.DataPropertyName = "MSSV";
             Column1.DataPropertyName = "FullName";

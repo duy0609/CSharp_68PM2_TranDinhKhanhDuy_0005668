@@ -223,7 +223,7 @@
             dataGridView1.RowTemplate.Height = 28;
             dataGridView1.Size = new Size(720, 478);
             dataGridView1.TabIndex = 12;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // MSSV
             // 
