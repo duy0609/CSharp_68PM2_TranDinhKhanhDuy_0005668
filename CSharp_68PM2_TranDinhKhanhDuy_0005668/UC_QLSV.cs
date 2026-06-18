@@ -168,5 +168,49 @@ namespace CSharp_68PM2_TranDinhKhanhDuy_0005668
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(selectedMssv))
+            {
+                MessageBox.Show("Vui lòng chọn sinh viên cần sửa.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_name.Text) || comboBox3.SelectedValue == null)
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin sinh viên.");
+                return;
+            }
+
+            try
+            {
+                using MySqlConnection connection = DBConnect.GetConnection();
+                connection.Open();
+
+                using MySqlCommand command = new MySqlCommand(
+                    @"UPDATE Students
+                      SET FullName = @FullName,
+                          Gender = @Gender,
+                          DateOfBirth = @DateOfBirth,
+                          ClassId = @ClassId
+                      WHERE MSSV = @MSSV",
+                    connection);
+
+                command.Parameters.AddWithValue("@MSSV", selectedMssv);
+                command.Parameters.AddWithValue("@FullName", txt_name.Text.Trim());
+                command.Parameters.AddWithValue("@Gender", comboBox2.Text);
+                command.Parameters.AddWithValue("@DateOfBirth", dateTimePicker2.Value.Date);
+                command.Parameters.AddWithValue("@ClassId", comboBox3.SelectedValue);
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Sửa sinh viên thành công.");
+                LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không sửa được sinh viên: " + ex.Message);
+            }
+        }
     }
 }
